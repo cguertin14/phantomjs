@@ -18,6 +18,9 @@ jobs:
           VERSION=$(git describe --tags $(git rev-list --tags --max-count=1))
           echo ::set-output name=version::${VERSION}
 
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v3
+        
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
         with:
