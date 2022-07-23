@@ -44,6 +44,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            quay.io/cguertin14/k3supdater:latest
-            quay.io/cguertin14/k3supdater:${{ github.sha }}
-            quay.io/cguertin14/k3supdater:${{ steps.prep.outputs.version }}
+            quay.io/cguertin14/phantomjs:latest
+            quay.io/cguertin14/phantomjs:${{ github.sha }}
+            quay.io/cguertin14/phantomjs:${{ steps.prep.outputs.version }}
